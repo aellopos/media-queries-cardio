@@ -1,0 +1,52 @@
+*, :after, :before { box-sizing: border-box; }
+
+header,
+footer {
+	background: yellowgreen;
+}
+
+aside {
+	background: beige;
+}
+
+nav {
+	background: lightsteelblue;
+}
+
+/* -------------------------------------------- */
+/* CSS */
+/* -------------------------------------------- */
+/*
+	< 599px - mobile
+	> 899px - tablet
+	> 899px - pc	
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, footer {
+	height: 20vh;
+}
+
+article {
+	height: 40vh;
+}
+
+@media screen and (min-width: 899px) {
+	main {
+		display: flex;
+	}
+
+	nav {
+		width: 20vw;
+		height: 100vh;
+	}
+
+	article {
+		height: 60vh;
+		width: 80vw;
+	}
+}
