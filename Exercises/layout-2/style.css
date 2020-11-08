@@ -1,0 +1,23 @@
+*, :after, :before { box-sizing: border-box; }
+
+header,
+footer {
+	background: yellowgreen;
+}
+
+aside {
+	background: beige;
+}
+
+nav {
+	background: lightsteelblue;
+}
+
+/* -------------------------------------------- */
+/* CSS */
+/* -------------------------------------------- */
+/*
+	< 599px - mobile
+	> 899px - tablet
+	> 899px - pc	
+*/
