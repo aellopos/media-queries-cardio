@@ -1,0 +1,81 @@
+*, :after, :before { box-sizing: border-box; }
+
+header,
+footer {
+	background: yellowgreen;
+}
+
+aside {
+	background: beige;
+}
+
+nav {
+	background: lightsteelblue;
+}
+
+/* -------------------------------------------- */
+/* CSS */
+/* -------------------------------------------- */
+/*
+	< 599px - mobile
+	> 899px - tablet
+	> 899px - pc	
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, article, footer,aside {
+	height: 20vh;
+}
+
+@media screen and (min-width: 599px) {
+	.main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	nav {
+		flex: 1 1 100%;
+	}
+
+	article {
+		flex: 1 1 70%;
+	}
+
+	aside {
+		flex: 1 1 30%;
+	}
+
+	article, aside {
+		height: 40vh;
+	}
+}
+
+@media screen and (min-width: 899px) {
+	nav, aside {
+		flex: 1 1 20%;
+	}
+
+	article {
+		flex: 1 1 60%;
+	}
+
+	article {
+		order: 1;
+	}
+
+	aside {
+		order: 2;
+	}
+
+	nav {
+		order: 3;
+	}
+
+	article, aside, nav {
+		height: 60vh;
+	}
+}
